@@ -5,6 +5,25 @@ I built this small Active Directory environment in Azure to practice the kind of
 
 ---
 
+## Skills Demonstrated
+- Provisioning infrastructure in Microsoft Azure
+- Installing and configuring Active Directory Domain Services
+- Promoting a server to a Domain Controller and creating a new forest and domain
+- Creating and managing user accounts in Active Directory Users and Computers
+- Editing user profile attributes like address, phone, and organizational info
+- Performing password resets and account management tasks
+- Designing an OU structure and organizing users by department
+
+## Tools Used
+- Microsoft Azure Portal
+- Windows Server 2022 Datacenter
+- Active Directory Domain Services (AD DS)
+- Server Manager
+- Active Directory Users and Computers (ADUC)
+- Group Policy Management
+
+---
+
 ## Step 1: Provision the Virtual Machine (Azure)
 I started by deploying a Windows Server 2022 Datacenter (x64, Gen2) virtual machine through the Azure Portal. I created a new resource group called `Active_Directory`, named the VM `AD`, and deployed it to the West US 2 region. I kept it simple for a lab environment, so I used Trusted Launch for security and skipped infrastructure redundancy since this was just a single test server.
 
@@ -46,14 +65,3 @@ Finally, I created three new Organizational Units, HR, IT, and Finance, under th
 ![Step 8](8.png)
 ![Step 9](9.png)
 ![Step 10](10.png)
-
----
-
-## Skills Demonstrated
-- Provisioning infrastructure in Microsoft Azure
-- Installing and configuring Active Directory Domain Services
-- Promoting a server to a Domain Controller and creating a new forest and domain
-- Creating and managing user accounts in Active Directory Users and Computers
-- Editing user profile attributes like address, phone, and organizational info
-- Performing password resets and account management tasks
-- Designing an OU structure and organizing users by department
